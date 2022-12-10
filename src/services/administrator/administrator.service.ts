@@ -12,13 +12,9 @@ export class AdministratorService {
 
     getAll(): Promise<Administrator[]> {
         return this.administrator.find();
-    }
-/*
+    }/*
     getById(id: number): Promise<Administrator> {
-        return this.administrator.find({
-            where: {
-                photos: true
-            }
-        )};
-    }*/
+        return this.administrator.findOne(id);
+    }
+*/
 }
